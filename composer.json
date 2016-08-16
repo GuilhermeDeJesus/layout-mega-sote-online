@@ -1,0 +1,33 @@
+{
+	"name": "Kryptonite",
+	"author": "Guilherme de Jesus Silva",
+	"description": "Framework para a construção de sistemas de pequeno a médio porte",
+	"require": {
+		"php": ">=5.3.3",
+        "monolog/monolog": "1.18.*",
+		"doctrine/dbal": "2.5.4",
+		"phpunit/phpunit": "5.2.*",
+		"behat/behat": "3.*",
+		"behat/mink": "dev-master",
+		"behat/mink-goutte-driver": "dev-master",
+		"behat/mink-selenium2-driver": "dev-master",
+	    "behat/mink-browserkit-driver": "@dev",
+	    "behat/mink-extension": "dev-master",
+		"behat/mink-zombie-driver": "1.4",
+		"behat/mink-selenium-driver": "*",
+		"sensiolabs/behat-page-object-extension": "@dev",
+		"guzzlehttp/guzzle": "*",
+		"phpmailer/phpmailer": "~5.2"
+	},	
+	"autoload":{
+		"psr-4": { 
+			"MegaSorteOnline\\": "src/",  
+			"Krypitonite\\": "Krypitonite/src/",
+			"Configuration\\": "config/"
+		}
+	},
+    "config":{
+        "bin-dir": "bin"
+    },  
+    "minimum-stability": "stable"
+}
